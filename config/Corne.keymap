@@ -28,13 +28,13 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |   Q    |   W    |   F    |   P    |  B  |   |  J  |   L     |   U    |   Y    |   '    | BSPC |
-// | CTRL |   A    |   R    |   S    |   T    |  G  |   |  M  |   N     |   E    |   I    |   O    |  ;   |
-// | SHFT |   Z    |   X    |   C    |   D    |  V  |   |  K  |   H     |   ,    |   .    |   /    | ESC  |
-//                                | GUI | SPC | LWR |   | RSE | BSPC  | ALT |
+// |  ESC   |   Q  |   W  |   F  |  P  |  B  |   |  J  |  L  |   U  |   Y  |   '  | BSPC |
+// | S(TAB) | G(A) | A(R) | C(S) |  T  |  G  |   |  M  |  N  | C(E) | A(I) | G(O) | S(;) |
+// | SHFT   |   Z  |   X  |   C  |  D  |  V  |   |  K  |  H  |   ,  |   .  |   /  | ESC  |
+//                         | GUI | SPC | LWR |   | RSE | BSPC | ALT |
                         bindings = <
    &kp ESC   &kp Q  &kp W  &kp F  &kp P  &kp B   &kp J &kp L    &kp U      &kp Y    &kp SQT   &kp BSPC
-   &kp TAB   &kp A  &kp R  &kp S  &kp T  &kp G   &kp M &kp N    &kp E      &kp I    &kp O     &kp SEMI
+   &bhm LSHFT TAB   &bhm LGUI A  &bhm LALT R  &bhm LCTRL S  &kp T  &kp G   &kp M &kp N    &bhm LCTRL E      &bhm LALT I    &bhm LGUI O     &bhm LSHFT SEMI
    &kp LSHFT &kp Z  &kp X  &kp C  &kp D  &kp V   &kp K &kp H    &kp COMMA  &kp DOT  &kp FSLH  &kp LCTRL
                       &kp LGUI &kp SPACE &mo 1   &mo 2 &kp BSPC &kp RALT
                         >;
